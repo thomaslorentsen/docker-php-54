@@ -1,5 +1,7 @@
 FROM centos:6.8
 
+MAINTAINER Tom Lorentsen "tom@thomaslorentsen.co.uk"
+
 RUN yum install -y \
     https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-common-5.4.45-1.ius.centos6.x86_64.rpm \
     https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-cli-5.4.45-1.ius.centos6.x86_64.rpm \
