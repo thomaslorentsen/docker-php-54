@@ -7,16 +7,13 @@ services:
   - docker
 
 install:
-  - docker build -t adyen-card-tester .
-  - docker run -d -p 127.0.0.1:80:5000 -e ADYEN_KEY="adyen public key" --name adyen-card-tester adyen-card-tester
-
-before_script:
-  - wget --quiet 127.0.0.1:80
+  - docker build -t php-54 .
+  - docker run -d -p 127.0.0.1:80:80 --name php-54 php-54
 
 script:
   - wget --quiet 127.0.0.1:80
-  - docker ps | grep -q adyen-card-tester
+  - docker ps | grep -q php-54
 
 after_failure:
-  - docker logs adyen-card-tester
+  - docker logs php-54
 ...

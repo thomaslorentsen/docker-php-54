@@ -5,5 +5,5 @@ PHP 54 in Docker
 
 ```bash
 docker build -t php54 .
-docker create -p 127.0.0.1:8080:80 --name php54 php54
+docker run -p 127.0.0.1:8080:80 --name php54 php54
 ```
