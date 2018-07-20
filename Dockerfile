@@ -24,6 +24,7 @@ RUN yum install -y \
     https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-pecl-apc-3.1.13-2.ius.centos6.x86_64.rpm \
     https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-pecl-memcache-3.0.8-1.ius.centos6.x86_64.rpm \
     https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-pecl-xdebug-2.3.3-1.ius.centos6.x86_64.rpm \
+    https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-pecl-redis-2.2.7-1.ius.centos6.x86_64.rpm \
     && yum clean all -y
 
 RUN yum install httpd \
