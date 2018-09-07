@@ -1,4 +1,4 @@
-FROM centos:6.10
+FROM centos:6.9
 
 LABEL maintainer="Tom Lorentsen <tom@thomaslorentsen.co.uk>"
 LABEL org.label-schema.description="Centos 6 running Apache and PHP 54"
