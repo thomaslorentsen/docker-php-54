@@ -1,4 +1,4 @@
-FROM centos:6.9
+FROM centos:6.10
 
 LABEL maintainer="Tom Lorentsen <tom@thomaslorentsen.co.uk>"
 
