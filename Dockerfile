@@ -1,6 +1,11 @@
 FROM centos:6.10
 
 LABEL maintainer="Tom Lorentsen <tom@thomaslorentsen.co.uk>"
+LABEL org.label-schema.description="Centos 6 running Apache and PHP 54"
+LABEL org.label-schema.name="docker-php-54"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.vcs-url="https://github.com/thomaslorentsen/docker-php-54"
+LABEL org.label-schema.vendor="Thomas Lorentsen"
 
 RUN yum install -y \
     https://dl.iuscommunity.org/pub/ius/archive/CentOS/6/x86_64/php54-common-5.4.45-1.ius.centos6.x86_64.rpm \
